@@ -1,7 +1,17 @@
+const { execSync } = require('child_process');
+const fs = require('fs');
 
+// Function to execute shell commands
+function runCommand(command) {
+  try {
+    execSync(command, { stdio: 'inherit' });
+  } catch (error) {
+    console.error(`Error executing command: ${command}\n`, error);
+  }
+}
 
 async function getQuestionsFromOpenAI(numQuestions = 5) {
-  console.log("Running");
+  // console.log("Running");
   // const topic = document.getElementById("topic").value;
 	// 	const difficulty = document.getElementById("difficulty").value;  
   var topic = "Python BAsics";
@@ -9,7 +19,7 @@ async function getQuestionsFromOpenAI(numQuestions = 5) {
   const k  = "svcacct-K5StdTYEvGzcttBJ_OkX8HuVMSWd-CVBxKQRzTlyy6G8bVT1beLzQUX-xTFtMghilg30BZrT3BlbkFJrBzLa8dMM9nkSRRu7B8G__NsErisC1uaSk0JLkJGNmd7oyoPW2Qz0EKV0TV19n79y_3QXywA";
     
     const kk = "sk-" + k;  // Replace with your OpenAI API Key
-    console.log("Api Key: ", kk)
+    
     const url = "https://api.openai.com/v1/chat/completions";
 
     const prompt = `Generate ${numQuestions} ${difficulty} difficulty multiple-choice questions on ${topic} in JSON format. Each question should have a "question" field, an "options" array (4 choices), and an "answer" field with the correct answer. Do Not Include Any MarkDown Formatting, or specify file format. The format should strictly match:
@@ -55,6 +65,7 @@ async function getQuestionsFromOpenAI(numQuestions = 5) {
   
           // Success 
           console.log("Done writing");
+          console.log
       }); 
    
     
@@ -77,5 +88,27 @@ async function getQuestionsFromOpenAI(numQuestions = 5) {
 }
 
 
+// Main function
+function main() {
+  // generateJsonFile();
+  getQuestionsFromOpenAI();
 
-getQuestionsFromOpenAI();
+  // Configure Git
+  runCommand('git config --global user.name "sahilgangani17"');
+  runCommand('git config --global user.email "sg17022007@gmail.com"');
+
+  // Add changes
+  runCommand('git add data.json');
+
+  // Commit changes
+  runCommand('git commit -m "Add generated JSON file"');
+
+  // Set remote URL with authentication
+  const repoUrl = `https://github.com/sahilgangani17/Technothon.git`;
+  runCommand(`git remote set-url origin ${repoUrl}`);
+
+  // Push changes
+  runCommand('git push origin main');
+}
+
+main();
