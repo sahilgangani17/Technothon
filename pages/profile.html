@@ -52,9 +52,9 @@
     <script>
       async function getQuestionsFromOpenAI() {
 
-    const k  = "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";
+    const k  = "admin-KWEtqzi5Ssvjjxya88e3PG-h_axNIM7vZGUytxJf-H29q0RlIn08UT4le3T3BlbkFJyHnzoVeH5mAE-vFkXo6d_SMoFbLh7UshYKoy-9eEG9ItVjij4py6Z1EjQA";
         
-    // const kk = "sk-" + k; 
+    const kk = "sk-" + k; 
     const url = "https://api.openai.com/v1/organization/projects/proj_drrg1KOmqaROgjni1KcMAilC/service_accounts";
 
     // const name = localStorage.getItem("LoggedInUser");
@@ -64,7 +64,7 @@
     const response = await fetch(url, {
         method: "POST",
         headers: {
-            "Authorization": "Bearer " + k,
+            "Authorization": "Bearer " + kk,
             "Content-Type": "application/json",
         },
         body: {
