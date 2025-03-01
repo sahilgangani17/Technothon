@@ -98,7 +98,7 @@ function main() {
   runCommand('git config --global user.email "sg17022007@gmail.com"');
 
   // Add changes
-  runCommand('git add data.json');
+  runCommand('git add users.json');
 
   // Commit changes
   runCommand('git commit -m "Add generated JSON file"');
