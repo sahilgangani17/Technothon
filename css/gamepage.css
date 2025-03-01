@@ -1,0 +1,215 @@
+/* General styles */
+body {
+    background-color: #90A8C3;
+    color: #fff;
+    font-family: 'Jersey 10', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flex container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    /* margin-top: 100px; */
+}
+
+/* Game progress container */
+.gameNprogress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+}
+
+/* Stats section */
+.stats {
+    font-family: 'Jersey 15', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    color: #000;
+    font-size: 2rem;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.stats p {
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 30px;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #4F518C;
+    text-align: center;
+    line-height: 30px;
+    color: aliceblue;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Badges */
+.allbadges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.badge {
+    background-color: #4F518C;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.badge img {
+    border-radius: 50%;
+    width: 35px;
+}
+
+.badge p {
+    font-size: 20px;
+    font-family: "Doto";
+}
+
+.badge:hover {
+    transform: scale(1.05);
+    background-color: #6a75c9;
+}
+
+/* Responsive iframe for game */
+iframe {
+    display: block;
+    width: 800; /* Responsive width */
+    height: 600; /* Maintain aspect ratio */
+    max-width: 800px;
+    max-height: 80vh;
+    border: 3px solid #4F518C;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+/* Info section */
+.Info_level {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    margin: 30px 10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.Info_level h3 {
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.Info_level p {
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.Info_level ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.Info_level ul li {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.Info_level ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gameNprogress {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .stats p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .stats {
+        font-size: 1.2rem;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .badge p {
+        font-size: 0.9rem;
+    }
+
+    .Info_level {
+        margin: 20px 5%;
+        padding: 15px;
+    }
+
+    .Info_level h3 {
+        font-size: 1.6rem;
+    }
+
+    .Info_level p, .Info_level ul li {
+        font-size: 1rem;
+    }
+
+    iframe {
+        width: 95vw;
+        height: 60vh;
+    }
+}

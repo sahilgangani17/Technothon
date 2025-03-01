@@ -1,0 +1,91 @@
+BOLTZER
+@START
+A DATATYPE is a classification of data that specifies the kind of value a variable can hold.
+@END
+@START
+1. Numeric Types
+a. Integers (int):
+Integers store whole numbers, positive or negative, without decimals.
+Example:
+\t int_num = 3
+\t print("number : ", int_num)
+Output:
+\t number: 3
+@END
+@START
+b. Floating-point (float):
+Floats store decimal numbers, positive or negative.
+Example:
+\t float_num = 4.16
+\t print("float number: ", float_num)
+Output: 
+\t float number: 4.13
+@END
+@START
+c. Complex numbers (complex):
+Complex numbers consist of a real part and an imaginary part.
+Example:
+\t complex_number = 4 + 13j
+\t print("complex number: ", complex_number)
+Output:
+\t complex number: (4 + 13j)
+@END
+@START
+2. Boolean (bool)
+Boolean values represent either `True` or `False`.
+Example:
+\t r = 4
+\t s = 10
+\t print(r == s) 
+Output:
+\t False
+@END
+@START
+3. Sequence Types
+a. List
+An ordered collection of items within square brackets, allowing modification.
+Example:
+\t my_list = [3, 4.14, "harper"]
+\t my_list.append("hello") 
+\t print("My list: ", my_list)
+Output: 
+\t My list:  [3, 4.14, 'harper', 'hello']
+@END 
+@START
+b. Tuple
+An ordered collection within parentheses, immutable.
+Example:
+\t tuple_example = (4, "peace", 4.2, "science")
+\t print("Tuple example: ", tuple_example)
+Output:
+\t Tuple example: (4, "peace", 4.2, "science")
+@END
+@START
+c. String
+A sequence of characters enclosed in single or double quotes.
+Example:
+\t str_example = "Hello"
+\t print("String example: ", str_example)
+Output:
+\t String example: Hello
+@END
+@START
+4. Dictionary
+A collection of key-value pairs enclosed in curly braces.
+Example:
+\t dictionary = {"name": "grey", "age": 20, "weight": 52}
+\t dictionary["age"] = 21 
+\t print("Dictionary: ", dictionary)
+Output:
+\t Dictionary:  {'name': 'grey', 'age': 21, 'weight': 52}
+@END 
+@START
+5. Set
+An unordered collection of unique items within curly braces.
+Example:
+\t my_set = {4, 6, 8, 10}
+\t my_set.add(12)
+\t print("Set : ", my_set)
+Output: 
+\t Set :  {4, 6, 8, 10, 12}
+@END

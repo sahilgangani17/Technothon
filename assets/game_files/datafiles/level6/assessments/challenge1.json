@@ -1,0 +1,20 @@
+{
+  "assessment" : [
+    
+    {
+      "question" : "Lists in Python are __________, meaning their elements can be changed.",
+      "options" : ["Immutable", "Mutable", "Static", "Fixed"],
+      "answer" : "Mutable"
+    },
+    {
+      "question" : "A list cannot store duplicate values.",
+      "options" : ["True", "False"],
+      "answer": "False"
+    },
+    {
+      "question" : "Lists can contain different data types.",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    }
+  ]
+}

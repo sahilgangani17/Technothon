@@ -1,0 +1,39 @@
+While Loops in Python 
+@sSTART
+A while loop is like waiting for something to happen—you keep doing a task until a condition is met.
+Real-Life Example
+Think about waiting for your phone to fully charge.
+-If your battery is less than 100%, you keep charging.
+-Once it reaches 100%, you stop charging and unplug.
+This is exactly how a while loop works in Python!
+@END
+@START
+Basic While Loop
+Let’s say we want to count from 0 to 4:
+\t i = 0
+\t while i < 5:  
+\t     print(i)
+\t     i+= 1  
+Output:
+\t 0  
+\t 1  
+\t 2  
+\t 3  
+\t 4  
+@END 
+@START
+Here,
+-The loop starts with i = 0.
+-It checks if i < 5. If true, it runs the code inside.
+-After printing i, it adds 1 (i += 1).
+-The loop stops when i = 5 because the condition i < 5 is now false.
+@END
+@START
+The Danger of Infinite Loops
+Be careful! If you forget to update i, the loop never stops!
+
+\t i = 0
+\t while i < 5:
+\t     print(i)  # Oops! Forgot to increment i!
+This keeps printing 0 forever—Python won’t stop unless you forcefully exit. 
+@END

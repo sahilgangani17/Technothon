@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbonari About Us</title>
+  <!-- Google fonts start -->
+  <!-- Google fonts start -->
+  <!-- Pixelated Fonts EB Garamond, Jersey 10,  Jersey 15-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jersey+10&family=Jersey+15&display=swap"
+    rel="stylesheet">
+  <!-- Google fonts end -->
+  <!-- Google fonts end -->
+  <!-- <link rel="stylesheet" href="../css/homepage.css"> -->
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/interpreted.css">
+  <link rel="icon" href="../assets/imgs/logo.png">
+  <script type="module" src="../js/indexbuttoncontentload.js"></script>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo" onclick="goindex()">
+      <img src="../assets/imgs/logo.png" alt="logo will be added" class="logo-img">
+      <h1>Carbonari</h1>
+    </div>
+    <div class="Nav-Bar">
+      <ul>
+        <li><a href="../index.html" id="home">Home</a></li>
+        <li><a href="interpreter.html" id="interpreter">Python Interpreter</a></li>
+        <li><a href="gamepage.html" id="game">Game</a></li>
+        <li><a href="aboutus.html" id="aboutus">About Us</a></li>
+        <li><a href="profile.html" id="profile">Profile</a></li>
+      </ul>
+    </div>
+    <!-- <div class="login-and-signup">
+      <button type="button" class="login" onclick="dologin()">Login</button>
+      <button type="button" class="signup" onclick="dosignup()">Sign Up</button>
+    </div> -->
+    <div class="rate-us">
+      <button type="button" class="rate-us-button" onclick="rateus()">Rate Us</button>
+    </div>
+  </div>
+  <div class="pythoninterpreter">
+    <div class="textnbutton">
+      <h2>Python Interpreter</h2>
+      <button onclick="runPython()" id="get-started">Run</button>
+    </div>
+    <textarea id="pythoncode" rows="6" cols="50">print("Hello World")</textarea>
+    <h2>Output</h2>
+    <div class="output">
+      <pre id="output"></pre>
+    </div>
+    <script src="../js/interpreter.js"></script>
+  </div>
+  <!-- <h1>INPUT: TEMP</h1>
+  <script type="module">
+    import { syncLocalWithFirebase } from "../js/getsave.js";
+    window.syncLocalWithFirebase = syncLocalWithFirebase; // Make it available globally
+  </script>
+		 <input type="text"  id="temp">
+		<button type="submit" onclick="syncLocalWithFirebase()"></button> -->
+</body>
+
+<script src="../js/onclick_button.js"></script>
+
+</html>

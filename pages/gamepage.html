@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google fonts start -->
+  <!-- Google fonts start -->
+  <!-- Pixelated Fonts EB Garamond, Jersey 10,  Jersey 15-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jersey+10&family=Jersey+15&display=swap"
+    rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Google fonts end -->
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/gamepage.css">
+  <link rel="icon" href="../assets/imgs/logo.png">
+  <!-- <script type="module" src="../js/syncsave.js"></script> -->
+  <script type="module" src="../js/stats.js"></script>
+  <script type="module" src="../js/indexbuttoncontentload.js"></script>
+  <script src="../js/requestquestion.js"></script>
+  <title>Carbonari Home Page</title>
+</head>
+
+<body>
+	<!-- NavBarBOX start-->
+  <div class="header">
+	  <div class="logo" onclick="goindex()">
+		  <img src="../assets/imgs/logo.png" alt="logo will be added" class="logo-img">
+		  <h1>Carbonari</h1>
+		</div>
+		<div class="Nav-Bar">
+			<ul>
+				<li><a href="../index.html" id="home">Home</a></li>
+				<li><a href="interpreter.html" id="interpreter">Python Interpreter</a></li>
+				<li><a href="gamepage.html" id="game">Game</a></li>
+				<li><a href="aboutus.html" id="aboutus">About Us</a></li>
+        <li><a href="profile.html" id="profile">Profile</a></li>
+      </ul>
+    </div>
+    <!-- <div class="login-and-signup">
+		<button type="button" class="login" onclick="dologin()">Login</button>
+		<button type="button" class="signup" onclick="dosignup()">Sign Up</button>
+    </div> -->
+    <div class="rate-us">
+		<button type="button" class="rate-us-button" onclick="rateus()">Rate Us</button>
+    </div>
+</div>
+<!-- NavBarBOX end-->
+
+<div class="flex-container">
+	<!-- GAME -->
+	<div class="gameNprogress">
+		<!-- <div class="iframe-container"> -->
+			<iframe src="../assets/game/" width="8000" height="600px" scrolling="no">
+				Your browser does not support iframes.
+			</iframe>
+		<!-- </div> -->
+		<div class="stats">
+			<h3 id="PlayerName" >HELLO,  </h3>
+			<!-- <p >Guest</p> -->
+			
+			<div class="progress-container">
+				<div class="progress-bar" id="progressBar"></div>
+			</div>
+			<p id="PlayedTime">Played Time: 00 Hours 00 Minutes</p>
+			<div class="allbadges" >
+				<p>Passes Collected:</p>
+				<br>
+				<div class="badge" id="badge1">
+					<img src="../assets/imgs/Badges/1.png" alt="Eroror">
+					<!-- <br> -->
+					<p>Level 1</p>
+				</div>
+				<div class="badge" id="badge2">
+					<img src="../assets/imgs/Badges/2.png" alt="Eroror">
+					<!-- <br> -->
+					<p>Level 2</p>
+				</div>
+				<div class="badge" id="badge3">
+					<img src="../assets/imgs/Badges/3.png" alt="Eroror">
+					<!-- <br> -->
+					<p>Level 3</p>
+				</div>
+				<div class="badge" id="badge4">
+					<img src="../assets/imgs/Badges/4.png" alt="Eroror">
+					<br>
+					<p>Level 4</p>
+				</div>
+				<div class="badge" id="badge5"><img src="../assets/imgs/Badges/5.png" alt="Eroror">
+					<br>
+					<p>Level 5</p>
+				</div>
+				<div class="badge" id="badge6">
+					<img src="../assets/imgs/Badges/6.png" alt="Eroror">
+					<br>
+					<p>Level 6</p>
+				</div>
+				<div class="badge" id="badge7">
+					<img src="../assets/imgs/Badges/7.png" alt="Eroror">
+					<br>
+					<p>Level 7</p>
+				</div>
+				<div class="badge" id="badge8">
+					<img src="../assets/imgs/Badges/8.png" alt="Eroror">
+					<br>
+					<p>Level 8</p>
+				</div>
+			</div>
+			<br>
+			<p id="BotDefeated">Bot Defeated: 0</p>
+		</div>
+		
+	</div>
+	
+    <!-- AI CHATBOT -->
+	<!--     <iframe
+	src="https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2025/01/28/18/20250128180536-KRBNQ1GV.json"
+	width="400" height="600px" scrolling="no">
+	Your browser does not support iframes.
+</iframe> -->
+</div>
+
+<div class  = "Info_level">
+	<h3>Basic Controls for Games:</h3>
+	<ul>
+		<li>Move with WASD <img class = "Keys" src = "../assets/imgs/wasd.png" alt  = "Error" width = "10%" height="10%"> or ARROW keys <img class = "Keys" src = "../assets/imgs/arrow.png" alt  = "Error" width = "10%" height="10%"></li>
+		<li>Hold 'SHIFT' <img class = "Keys" src = "../assets/imgs/shift.png" alt  = "Error" width = "80" height="40"> to Sprint</li>
+		<li>Interact with 'F' <img class = "Keys" src = "../assets/imgs/F.png" alt  = "Error" width = "40" height="40"> key</li>
+	<li>Press 'F1' <img class = "Keys" src = "../assets/imgs/F1.png" alt  = "Error" width = "40" height="40" > to learn from RIRURU</li>
+	<li>Press 'F2' <img class = "Keys" src = "../assets/imgs/F2.png" alt  = "Error" width = "40" height="40"> to play battle game</li>
+	<li>Press 'Space' <img class = "Keys" src = "../assets/imgs/Spacebar.png" alt  = "Error" width = "80" height="40"> to continue</li>
+	<li>Move through doors at the end of each level to get to the next level</li>
+    <ul>
+    </div>
+	<div class  = "Info_level">
+		
+		<h3>Level 1: The Digital Cell</h3>
+		<p>In This level we'll be Learning about:</p>
+		<ul>
+			<li>Introduction and History About Python.</li>
+			<li>Some Basic Syntax.</li>
+			<li>What are Comments and Why are they Used?</li>
+			<li>How Display Text Using print() Statement.</li>
+		</ul>
+		<h3>Level 2: The FireWall</h3>
+		<p>In This level we'll be Learning about:</p>
+		<ul>
+			<li>Python Variables.</li>
+			<li>Operatore Used In Python.</li>
+			<li>Different Datat Types Used.</li>
+			<li>How to Get Input from the User.</li>
+		</ul>
+		<h3>Level 3: The Maze of Logic</h3>
+		<p>In This level we'll be Learning about:</p>
+		<ul>
+			<li>What are Conditional Statements.</li>
+			<li>What are Relational & Logical Expression</li>
+		</ul>
+		<h3>Level 4: The Looping System</h3>
+		<p>In This level we'll be Learning about:</p>
+		<ul>
+			<li>What are Loop.</li>
+			<li>Types: While loop & for loop.</li>
+			<li>What are Loop Control Statment.</li>
+		</ul>
+		<h3>Level 5: The Vault</h3>
+		<p>In This level we'll be Learning about:</p>
+		<ul>
+			<li>What are Fnctions. How do we Define & Call them.</li>
+			<li>Various Type of Function In Python.</li>
+			<li>What are Function Parameters, Return Values, & Default Argument.</li>
+		</ul>
+		<h3>Level 6: The Digital lab</h3>
+		<p>In This level we'll be Learning about:</p>
+		<ul>
+			<li>List, their Applications & Methods?</li>
+			<li>Dictionaries, their Applications & Methods?</li>
+		</ul>
+		<h3>Level 7: The Record Room</h3>
+		<p>In This level we'll be Learning about:</p>
+		<ul>
+			<li>Set, their Applications & Methods?</li>
+			<li>Tuples, their Applications & Methods?</li>
+			<li>What are Difference Between List, Dictionaries, Tuple & Set.</li>
+		</ul>	
+		<h3>Level 8: The Control Room / Advanced Valut.</h3>
+		<p>In This level we'll be Learning about:</p>
+		<ul>
+			<li>Classes & Object.</li>
+			<li>Various Class Methods.</li>
+			<li>Class Attributes.</li>
+			<li>Inheritance & Polymorphism.</li>
+		</ul>
+	</div>
+
+  </div>
+
+</body>
+<script src="../js/onclick_button.js"></script>
+
+</html>

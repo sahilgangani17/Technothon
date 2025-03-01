@@ -1,0 +1,39 @@
+{
+  "assessment" : [
+    {
+      "question" : "What happens if you try to modify an element in a tuple?",
+      "options" : ["It updates", "An error occurs", "The tuple is deleted", "Nothing happens"],
+      "answer" : "An error occurs"
+    },
+    {
+      "question" : "Which of these is a valid tuple?",
+      "options" : ["(1, 2, 3)", "{1, 2, 3}", "[1, 2, 3]", "tuple[1, 2, 3]"],
+      "answer" : "(1, 2, 3)"
+    },
+    {
+      "question" : "Tuples are __________, meaning their values cannot be changed. ",
+      "options" : ["Dynamic", "Mutable", "immutable", "Static"],
+      "answer" : "immutable"
+    },
+    {
+      "question" : "Tuple elements can be accessed using an index. ",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    },
+    {
+      "question" : "You can append elements to a tuple.",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    },
+    {
+      "question" : "Tuple must contain at least two elements.",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    },
+    {
+      "question" : "A tuple can store __________ data types. ",
+      "options" : ["Multiple", "Only Two", "Same", "None of Above"],
+      "answer" : "Multiple"
+    }
+  ]
+}

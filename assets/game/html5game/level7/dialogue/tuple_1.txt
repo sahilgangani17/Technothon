@@ -1,0 +1,46 @@
+Tuples in Python – Definition & Usage! 
+@START
+A tuple in Python is like a locked playlist —once you create it, you can’t change its elements. It’s an ordered, immutable collection that allows duplicates and is defined using parentheses ().
+What is a Tuple?
+1. Ordered – Elements maintain their order.
+2. Immutable – You can’t change, add, or remove elements after creation.
+3. Allows Duplicates – You can store repeated values.
+4. Faster than Lists – Since tuples are immutable, they are optimized for speed and memory.
+@END
+@START
+Creating a Tuple
+\t fruits = ("apple", "banana", "cherry")
+\t print(fruits)
+Output:
+\t ('apple', 'banana', 'cherry')
+@END
+@START
+Accessing Tuple Elements
+Tuples support indexing and slicing just like lists!
+\t print(fruits[0])  
+\t print(fruits[-1]) 
+Output: 
+\t apple
+\t cherry
+\t # Slicing a tuple
+\t print(fruits[0:2])   
+Output: 
+\t ('apple', 'banana')
+@END
+@START
+Looping Through a Tuple
+You can iterate over a tuple using a for loop.
+\t for fruit in fruits:
+\t     print(fruit)
+Output:
+\t apple
+\t banana
+\t cherry
+@END
+@START
+When to Use Tuples?
+1. When you want data to remain unchanged (e.g., months of the year).
+2. When you need faster access than lists.
+3. When storing fixed collections of items.
+4. When using keys in a dictionary (since tuples are immutable).
+@END

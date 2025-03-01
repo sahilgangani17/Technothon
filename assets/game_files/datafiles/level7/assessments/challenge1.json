@@ -1,0 +1,34 @@
+{
+  "assessment" : [
+    {
+    "question" : "Which of the following data structures does not allow duplicates?",
+    "options" : ["List", "Set", "Tuple", "Dictionary"],
+    "answer" : "Set"
+    },
+    {
+    "question" : "What will be the output of len({1, 2, 2, 3})?",
+    "options" : ["3", "4", "2", "5"],
+    "answer" : "3"
+    },
+    {
+    "question" : "A set in Python is defined using __________ brackets.",
+    "options" : ["()", "{}", "[]", "<>"],
+    "answer" : "{}"
+    },
+    {
+    "question" : "Sets allow duplicate values. ",
+    "options" : ["True", "False"],
+    "answer" : "False"
+    },
+    {
+    "question" : "The order of elements in a set is preserved",
+    "options" : ["True", "False"],
+    "answer" : "False"
+    },
+    {
+      "question" : "The union() method is used to combine __________ sets. ",
+      "options" : [ "One", "None", "Multiple"],
+      "answer" : "Multiple"
+    }
+  ]
+}
