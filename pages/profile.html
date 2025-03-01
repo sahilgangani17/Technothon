@@ -67,9 +67,9 @@
             "Authorization": "Bearer " + kk,
             "Content-Type": "application/json",
         },
-        body: {
+        body: JSON.stringify({
             "name": name
-        }
+        })
     });
     console.log("Response From :", response);
   }
